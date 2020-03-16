@@ -11,13 +11,10 @@ const buildMarker = function(type, coords) {
     let newMark = document.createElement("div");
     newMark.style.width = "32px";
     newMark.style.height = "39px";
-    newMark.style.backgroundImage = "string";
-  
-    console.log(newMark.style);
-    console.log(newMark.style.backgroundImage);
-    console.log(`"url(${iconURLs[type]})"`);
+    newMark.style.backgroundImage = `url(${iconURLs[type]})`;
+
     return new mapbox.Marker(newMark).setLngLat(coords);
-    
+
 };
 
 module.exports = buildMarker;

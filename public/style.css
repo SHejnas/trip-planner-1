@@ -1,14 +1,36 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #C1B5AD;
+    display: flex;
   }
 
   #map {
     height: 100vh;
     width: 100vw;
+  }
+  #navbar {
+    align-self: start;
+    background-color: darkcyan;
+  }
+
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+
+
+  }
+  #menu{
+    background-color: beige;
+
+  }
+  #itinerary {
+    background-color: cadetblue;
+
   }

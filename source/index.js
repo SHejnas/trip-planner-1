@@ -14,3 +14,5 @@ const map = new mapboxgl.Map({
 
 const marker1 = buildMarker("hotels", [-74.009151, 40.705086]); // or [-87.6354, 41.8885]
 marker1.addTo(map);
+const marker2 =  buildMarker("activity", [-74.121460, 41.330261])
+marker2.addTo(map);
